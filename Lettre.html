@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil</title>
+  <link rel="stylesheet" href="Lettre.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <body>
+  <!-- Header fixe -->
+  <header class="Contenus">
+    <img class="Logo" src="photo/Logo.png" alt="Logo">
+    <div class="Entete">
+      <ul class="Liste1">
+        <li><a href="">Accueil</a></li>
+        <li><a href="">Nos Services</a></li>
+        <li><a href="">Nos Réalisations</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">A Propos</a></li>
+      </ul>
+    </div>
+    <div class="menu-toggle"><ion-icon name="menu-outline"></ion-icon></div>
+  </header>
+
+  <!-- Hero avec diapo et points -->
+  <section class="hero">
+    <div class="Diapo"></div>
+    
+    <div class="hero-content">
+      <h1>Bienvenue sur GreenItCar</h1>
+      <p>Une entreprise informatique composée des experts en digital prêts à 
+          donner vie à vos idées numériques avec passion, expertise et impact!</p>
+      <h2>
+        <span id="typed-container">
+          <span id="typed-text"></span><span id="cursor"></span>
+        </span>
+      </h2>
+    </div>
+
+    <!-- Points du diaporama -->
+    <div class="diapo-dots">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <!-- Contenu scrollable après hero -->
+  <main class="content">
+    <section class="services">
+      <h2>Nos Services</h2>
+      <div class="Formation">
+        <img src="photo/form.jpg" alt="Formation">
+      </div>
+      <div class="Developpement">
+        <img src="photo/Dev.jpg" alt="Développement">
+      </div>
+      <div class="Maintenance">
+        <img src="photo/maint.jpg" alt="Maintenance">
+      </div>
+    </section>
+    <section>
+      <h2>Nos Réalisations</h2>
+      <p>Contenu de la page...</p>
+    </section>
+  </main>
+
+  <div class="Foot">
+    <footer>&copy; 2025, Développé par l'entreprise GreenItCar</footer>
+  </div>
+
+  <script src="Lettre.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggle = document.querySelector('.menu-toggle');
+      const menu = document.querySelector('.Liste1');
+      toggle.addEventListener('click', function () {
+        menu.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</body>
+</html>
