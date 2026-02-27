@@ -14,24 +14,24 @@
     <img class="Logo" src="photo/Logo.png" alt="Logo">
     <div class="Entete">
       <ul class="Liste1">
-        <li><a href="">Accueil</a></li>
-        <li><a href="">Nos Services</a></li>
-        <li><a href="">Nos Réalisations</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">A Propos</a></li>
+        <li><a href="#acceuil">Accueil</a></li>
+        <li><a href="Services.html">Nos Services</a></li>
+        <li><a href="Réalisation.html">Nos Réalisations</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="APropos.html">A Propos</a></li>
       </ul>
     </div>
     <div class="menu-toggle"><ion-icon name="menu-outline"></ion-icon></div>
   </header>
 
   <!-- Hero avec diapo et points -->
-  <section class="hero">
+  <section class="hero" id="acceuil">
     <div class="Diapo"></div>
-    
     <div class="hero-content">
       <h1>Bienvenue sur GreenItCar</h1>
-      <p>Une entreprise informatique composée des experts en digital prêts à 
-          donner vie à vos idées numériques avec passion, expertise et impact!</p>
+      <p class="intro">Une entreprise informatique composée des experts en digital prêts à 
+          donner vie <br>à vos idées numériques avec passion, expertise et impact!
+      </p>
       <h2>
         <span id="typed-container">
           <span id="typed-text"></span><span id="cursor"></span>
@@ -48,23 +48,51 @@
   </section>
 
   <!-- Contenu scrollable après hero -->
-  <main class="content">
-    <section class="services">
-      <h2>Nos Services</h2>
-      <div class="Formation">
-        <img src="photo/form.jpg" alt="Formation">
-      </div>
-      <div class="Developpement">
-        <img src="photo/Dev.jpg" alt="Développement">
-      </div>
-      <div class="Maintenance">
-        <img src="photo/maint.jpg" alt="Maintenance">
-      </div>
-    </section>
-    <section>
-      <h2>Nos Réalisations</h2>
-      <p>Contenu de la page...</p>
-    </section>
+  <main class="Corps">
+      <h2 class="Titre">Nos Services</h2>
+      <section class="services">
+        <div class="Formation">
+          <a href="Services.html#Formation">
+            <span class="titre image">Formations</span>
+            <img src="photo/form.jpg" alt="Formation">
+          </a>
+        </div>
+        <div class="Developpement">
+          <a href="Services.html#Developpement">
+            <span class="titre image">Développement</span>
+            <img src="photo/Dev.jpg" alt="Développement">
+          </a>
+        </div>
+        <div class="Maintenance">
+          <a href="Services.html#Maintenance">
+            <span class="titre image">Maintenance</span>
+            <img src="photo/maint.jpg" alt="Maintenance">
+          </a>
+        </div>
+      </section>
+    <h2 class="Titre">Nos Réalisations</h2>
+      <section class="Réalisations">
+        <div class="Application">
+          <a href="Réalisation.html#Application">
+            <span class="titre image">Applications</span>
+            <img src="photo/app1.jpeg" alt="Application">
+          </a>
+        </div>
+        <div class="Plateforme">
+          <a href="Réalisation.html#Plateforme">
+            <span class="titre image">Plateformes</span>
+            <img src="photo/plateforme.png" alt="Plateforme">
+          </a>
+        </div>
+        <div class="SiteWeb">
+          <a href="Réalisation.html#SiteWeb">
+            <span class="titre image">Sites Web</span>
+            <img src="photo/site.png" alt="Site Web">
+          </a>
+        </div>
+      </section>
+     <a class="Contact" href="Contact.html">Nous Contacter</a>
+      <br><br><br><br><br>
   </main>
 
   <div class="Foot">
