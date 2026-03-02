@@ -16,39 +16,443 @@ html, body {
   position: relative;
   background-color: rgb(235, 223, 204);
 }
-h1, h2 {
+
+/* Mobile First - Small Phones (360px - 480px) */
+@media (max-width: 480px) {
+  h1, h2 {
     text-align: center;
     margin-top: 2rem;
     color: #333;
-}
-p {
+  }
+
+  p {
     text-align: justify;
     margin: 1rem 2rem;
     color: #555;
     line-height: 1.6;
-}
-ol {
+  }
+
+  ol {
     margin: 1rem 2rem;
     color: #555;
     line-height: 1.6;
-}
-ol li {
+  }
+
+  ul {
+    margin: 1rem 2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  ol li {
     margin-bottom: 0.5rem;
-}
-.Foot {
-  position: fixed;
-  width: 100%;
-  height: 4rem;
-  background-color: rgb(23, 24, 24);
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
+  }
+
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .Photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+  }
+
+  .Photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .Photo .member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Photo p {
+    width: 150px;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0.5rem auto;
+    padding: 0;
+  }
+
+  .Foot {
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(23, 24, 24);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  footer {
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 0.75rem;
+  }
 }
 
-footer {
-  font-weight: 500;
-  text-align: center;
-  color: #fff;
+/* Tablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  h1, h2 {
+    text-align: center;
+    margin-top: 2rem;
+    color: #333;
+  }
+
+  p {
+    text-align: justify;
+    margin: 1rem 2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  ol {
+    margin: 1rem 2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  ul {
+    margin: 1rem 2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  ol li {
+    margin-bottom: 0.5rem;
+  }
+
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .Photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+  }
+
+  .Photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .Photo .member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Photo p {
+    width: 150px;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0.5rem auto;
+    padding: 0;
+  }
+
+  .Foot {
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(23, 24, 24);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  footer {
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+}
+
+/* Petits Laptops/Large Tablets (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  h1, h2 {
+    text-align: center;
+    margin-top: 2rem;
+    color: #333;
+  }
+
+  p {
+    text-align: justify;
+    margin: 1rem 2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  ol {
+    margin: 1rem 2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  ul {
+    margin: 1rem 2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  ol li {
+    margin-bottom: 0.5rem;
+  }
+
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .Photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+  }
+
+  .Photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .Photo .member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Photo p {
+    width: 150px;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0.5rem auto;
+    padding: 0;
+  }
+
+  .Foot {
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(23, 24, 24);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  footer {
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 0.95rem;
+  }
+}
+
+/* Laptops standard (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  h1, h2 {
+    text-align: center;
+    margin-top: 2rem;
+    color: #333;
+  }
+
+  p {
+    text-align: justify;
+    margin: 1rem 2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  ol {
+    margin: 1rem 2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  ul {
+    margin: 1rem 2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  ol li {
+    margin-bottom: 0.5rem;
+  }
+
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .Photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+  }
+
+  .Photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .Photo .member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Photo p {
+    width: 150px;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0.5rem auto;
+    padding: 0;
+  }
+
+  .Foot {
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(23, 24, 24);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  footer {
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+  }
+}
+
+/* Grand écrans (1441px and up) */
+@media (min-width: 1441px) {
+  h1, h2 {
+    text-align: center;
+    margin-top: 2rem;
+    color: #333;
+  }
+
+  p {
+    text-align: justify;
+    margin: 1rem 2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  ol {
+    margin: 1rem 2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  ul {
+    margin: 1rem 2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  ol li {
+    margin-bottom: 0.5rem;
+  }
+
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .Photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+  }
+
+  .Photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .Photo .member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Photo p {
+    width: 150px;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0.5rem auto;
+    padding: 0;
+  }
+
+  .Foot {
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(23, 24, 24);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  footer {
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+  }
 }

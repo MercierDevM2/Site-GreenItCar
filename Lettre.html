@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="Lettre.css">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
   <body>
@@ -49,7 +51,10 @@
 
   <!-- Contenu scrollable après hero -->
   <main class="Corps">
-      <h2 class="Titre">Nos Services</h2>
+      <h2 id="services-title" class="Titre">Nos Services</h2>
+      <a class="Contacts fixed" href="https://wa.me/+212680775822">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </a>
       <section class="services">
         <div class="Formation">
           <a href="Services.html#Formation">
@@ -91,14 +96,32 @@
           </a>
         </div>
       </section>
-     <a class="Contact" href="Contact.html">Nous Contacter</a>
-      <br><br><br><br><br>
+     <section class="Ap">
+        <h2 class="Titre">A Propos de Nous</h2>
+        <p class="apropo">
+          <a href="APropos.html#Qui Sommes-nous">Qui Sommes-nous</a> <br>
+          <a href="APropos.html#Notre Mission">Notre Mission</a> <br>
+          <a href="APropos.html#Notre Vision">Notre Vision</a> <br>
+          <a href="APropos.html#Notre Équipe">Notre Équipe</a>
+        </p>
+        <h2 class="Login">Nous Suivre</h2>
+        <p class="Link">
+          <a href="https://www.facebook.com/GreenItCar" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a><br>
+          <a href="https://www.twitter.com/GreenItCar" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a><br>
+          <a href="https://www.linkedin.com/company/GreenItCar" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a><br>
+          <a href="https://www.instagram.com/GreenItCar" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+        <h2 class="CT">Nous contacter</h2>
+        <p class="contact-info">
+          Email : merciergoni@gmail.com <br>
+          Téléphone : +212680775822 <br>
+          Adresse : Pk11 Begoua, Bangui, RCA
+        </p>
+     </section>
   </main>
 
   <div class="Foot">
     <footer>&copy; 2025, Développé par l'entreprise GreenItCar</footer>
   </div>
-
   <script src="Lettre.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
