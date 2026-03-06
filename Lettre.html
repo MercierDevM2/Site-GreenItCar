@@ -2,15 +2,13 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accueil</title>
   <link rel="stylesheet" href="Lettre.css">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-  <body>
   <!-- Header fixe -->
   <header class="Contenus">
     <img class="Logo" src="photo/Logo.png" alt="Logo">
@@ -110,7 +108,8 @@
           <a href="https://www.twitter.com/GreenItCar" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a><br>
           <a href="https://www.linkedin.com/company/GreenItCar" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a><br>
           <a href="https://www.instagram.com/GreenItCar" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-        <h2 class="CT">Nous contacter</h2>
+        </p>
+        <h2><a class="CT" href="Contact.html">Nous contacter</a></h2>
         <p class="contact-info">
           Email : merciergoni@gmail.com <br>
           Téléphone : +212680775822 <br>
@@ -123,15 +122,5 @@
     <footer>&copy; 2025, Développé par l'entreprise GreenItCar</footer>
   </div>
   <script src="Lettre.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const toggle = document.querySelector('.menu-toggle');
-      const menu = document.querySelector('.Liste1');
-      toggle.addEventListener('click', function () {
-        menu.classList.toggle('active');
-      });
-    });
-  </script>
-</body>
 </body>
 </html>

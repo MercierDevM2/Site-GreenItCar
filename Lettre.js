@@ -50,6 +50,28 @@ function startSlideshow() {
     showSlide(bgIndex);
   }, 5000);// Toutes les 5 secondes
 }
+// Menu toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const menuList = document.querySelector('.Liste1');
+
+menuToggle.addEventListener('click', () => {
+  menuList.classList.toggle('active');
+});
+
+// Close menu when clicking on a link
+menuList.addEventListener('click', (e) => {
+  if (e.target.tagName === 'A') {
+    menuList.classList.remove('active');
+  }
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+  if (!menuList.contains(e.target) && !menuToggle.contains(e.target)) {
+    menuList.classList.remove('active');
+  }
+});
+
 // Lancement au chargement
 window.addEventListener("load", () => {
   setTimeout(typeLetter, 500); // texte animé

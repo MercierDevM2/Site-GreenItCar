@@ -14,7 +14,7 @@ html, body {
   width: 100%;
   overflow-x: hidden;
   position: relative;
-  background-color: rgb(235, 223, 204);
+  background-color: rgb(202, 245, 226);
 }
 
 /* Mobile First - Small Phones (360px - 480px) */
@@ -22,7 +22,7 @@ html, body {
   h1, h2 {
     text-align: center;
     margin-top: 2rem;
-    color: #333;
+    color: rgb(3, 66, 3);
   }
 
   p {
@@ -34,13 +34,13 @@ html, body {
 
   ol {
     margin: 1rem 2rem;
-    color: #555;
+    color: rgb(3, 66, 3);
     line-height: 1.6;
   }
 
   ul {
     margin: 1rem 2rem;
-    color: #555;
+    color: rgb(3, 66, 3);
     line-height: 1.6;
   }
 
@@ -286,7 +286,7 @@ html, body {
   h1, h2 {
     text-align: center;
     margin-top: 2rem;
-    color: #333;
+    color: rgb(3, 66, 3);
   }
 
   p {
