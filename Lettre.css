@@ -22,21 +22,22 @@ html, body {
   }
 }
 
-@keyframes whatsappPulse {
-  0%, 47% {
-    opacity: 2;
+@keyframes contactGlow {
+  0% {
     transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
   }
-  47%, 53% {
-    opacity: 0.5;
-    transform: scale(1.30);
+
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 10px rgba(37, 211, 102, 0.3);
   }
-  53%, 100% {
-    opacity: 2;
+
+  100% {
     transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
   }
 }
-
 
 
 /* Mobile First - Small Phones (360px - 480px) */
@@ -109,8 +110,8 @@ html, body {
   .content, .Corps {
     position: relative;
     z-index: 1;
-    margin-top: 5rem;
-    padding: 1rem 0.5rem;
+    margin-top: 1rem;
+    padding: 0.5rem 0.5rem;
   }
 
   /* Hero */
@@ -216,7 +217,7 @@ html, body {
     gap: 1.5rem;
     margin-left: 0;
     margin-right: 0.5rem;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     padding: 0 0.5rem;
   }
 
@@ -277,7 +278,6 @@ html, body {
     justify-content: center;
     padding: 0 0.5rem;
     font-size: 1.2rem;
-    margin-top: 2rem;
   }
 
   /* Réalisations */
@@ -348,19 +348,52 @@ html, body {
 
   .Contacts.fixed {
     position: fixed;
-    left: 20px;
+    right: 20px;
     z-index: 1100;
-    top: 30rem;
+    top: 28rem;
     background: transparent;
-    animation: whatsappPulse 10.6s infinite;
+    animation: contactGlow 2s infinite;
   }
 
   .Ap {
     margin: 2rem auto;
-    padding: 1rem 2rem;
-    background-color: black;
+    padding: 1.5rem 1.5rem;
+    background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
     color: #fff;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(155, 89, 182, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .Ap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(155, 89, 182, 0.2) 0%, rgba(142, 68, 173, 0.2) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .Ap:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(155, 89, 182, 0.4);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .Ap:hover::before {
+    opacity: 1;
+  }
+
+  .Ap > * {
+    position: relative;
+    z-index: 1;
   }
 
   .apropo {
@@ -409,23 +442,25 @@ html, body {
 
   /* Footer */
   .Foot {
-    position: fixed;
-    width: 100%;
-    height: 3.5rem;
-    background-color: rgb(23, 24, 24);
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-  }
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
+}
 
-  footer {
-    font-weight: 500;
-    text-align: center;
-    color: #fff;
-    font-size: 0.75rem;
-  }
+footer {
+  font-weight: 500;
+  text-align: center;
+  color: #ecf0f1;
+  font-size: 0.9rem;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
 
   /* Contact - small phones */
   .Contact {
@@ -525,8 +560,8 @@ html, body {
   .content, .Corps {
     position: relative;
     z-index: 1;
-    margin-top: 5.5rem;
-    padding: 1.5rem 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
   }
 
   /* Hero */
@@ -633,7 +668,7 @@ html, body {
     gap: 1.8rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: 3rem;
+    margin-top: 0.5rem;
   }
 
   .services div {
@@ -764,19 +799,52 @@ html, body {
 
   .Contacts.fixed {
     position: fixed;
-    left: 20px;
+    right: 20px;
     z-index: 1100;
-    top: 30rem;
+    top: 28rem;
     background: transparent;
-    animation: whatsappPulse 10.6s infinite;
+    animation: contactGlow 2s infinite;
   }
 
   .Ap {
     margin: 2rem auto;
-    padding: 1rem 2rem;
-    background-color: black;
+    padding: 1.8rem 1.8rem;
+    background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
     color: #fff;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(155, 89, 182, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .Ap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(155, 89, 182, 0.2) 0%, rgba(142, 68, 173, 0.2) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .Ap:hover {
+    transform: translateY(-7px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(155, 89, 182, 0.4);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .Ap:hover::before {
+    opacity: 1;
+  }
+
+  .Ap > * {
+    position: relative;
+    z-index: 1;
   }
 
   .apropo {
@@ -825,23 +893,25 @@ html, body {
 
   /* Footer */
   .Foot {
-    position: fixed;
-    width: 100%;
-    height: 3.8rem;
-    background-color: rgb(23, 24, 24);
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-  }
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
+}
 
-  footer {
-    font-weight: 500;
-    text-align: center;
-    color: #fff;
-    font-size: 0.9rem;
-  }
+footer {
+  font-weight: 500;
+  text-align: center;
+  color: #ecf0f1;
+  font-size: 0.9rem;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
 
   .Contact {
     display: flex;
@@ -906,6 +976,14 @@ html, body {
     display: none;
   }
 
+  /* Content */
+  .content, .Corps {
+    position: relative;
+    z-index: 1;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
   .Liste1 {
     display: flex;
     justify-content: center;
@@ -917,7 +995,7 @@ html, body {
     position: relative;
     z-index: 1;
     margin-top: 5.5rem;
-    padding: 2rem 1.5rem;
+    padding: 0.5rem 1.5rem;
   }
 
   /* Hero */
@@ -1020,7 +1098,7 @@ html, body {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-left: 1.5rem;
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
 
   .services div {
@@ -1149,19 +1227,52 @@ html, body {
 
   .Contacts.fixed {
     position: fixed;
-    left: 20px;
+    right: 20px;
     z-index: 1100;
-    top: 30rem;
+    top: 28rem;
     background: transparent;
-    animation: whatsappPulse 10.6s infinite;
+    animation: contactGlow 2s infinite;
   }
 
   .Ap {
     margin: 2rem auto;
-    padding: 1rem 2rem;
-    background-color: black;
+    padding: 2rem 2rem;
+    background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
     color: #fff;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(155, 89, 182, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .Ap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(155, 89, 182, 0.2) 0%, rgba(142, 68, 173, 0.2) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .Ap:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 25px 50px rgba(155, 89, 182, 0.4);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .Ap:hover::before {
+    opacity: 1;
+  }
+
+  .Ap > * {
+    position: relative;
+    z-index: 1;
   }
 
   .apropo {
@@ -1205,24 +1316,25 @@ html, body {
 
   /* Footer */
   .Foot {
-    position: fixed;
-    width: 100%;
-    height: 4rem;
-    background-color: rgb(23, 24, 24);
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-  }
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
+}
 
-  footer {
-    font-weight: 500;
-    text-align: center;
-    color: #fff;
-    font-size: 0.95rem;
-  }
-
+footer {
+  font-weight: 500;
+  text-align: center;
+  color: #ecf0f1;
+  font-size: 0.9rem;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
   /* Contact - small laptops */
   .Contact {
     margin: 2rem auto;
@@ -1294,8 +1406,8 @@ html, body {
   .content, .Corps {
     position: relative;
     z-index: 1;
-    margin-top: 6rem;
-    padding: 2rem 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
   }
 
   /* Hero */
@@ -1335,7 +1447,7 @@ html, body {
 
   h2 {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0.2rem;
   }
 
   p {
@@ -1394,7 +1506,7 @@ html, body {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
     margin-left: 2rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 
   .services div {
@@ -1522,19 +1634,52 @@ html, body {
 
   .Contacts.fixed {
     position: fixed;
-    left: 20px;
+    right: 20px;
     z-index: 1100;
-    top: 30rem;
+    top: 28rem;
     background: transparent;
-    animation: whatsappPulse 10.6s infinite;
+    animation: contactGlow 2s infinite;
   }
 
   .Ap {
     margin: 2rem auto;
-    padding: 1rem 2rem;
-    background-color: black;
+    padding: 2.2rem 2.2rem;
+    background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
     color: #fff;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(155, 89, 182, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .Ap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(155, 89, 182, 0.2) 0%, rgba(142, 68, 173, 0.2) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .Ap:hover {
+    transform: translateY(-12px) scale(1.08);
+    box-shadow: 0 30px 60px rgba(155, 89, 182, 0.5);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .Ap:hover::before {
+    opacity: 1;
+  }
+
+  .Ap > * {
+    position: relative;
+    z-index: 1;
   }
 
   .CT{
@@ -1549,10 +1694,31 @@ html, body {
     font-size: 1rem;
   }
 
-  .Link {
+    .Link {
     margin: 2rem auto;
     padding: 1rem 2rem;
     font-size: 2rem;
+  }
+
+  .Link a {
+    display: inline-block;
+    margin: 0.5rem;
+  }
+
+  .Link ion-icon[name="logo-facebook"] {
+    color: #1877F2;
+  }
+
+  .Link ion-icon[name="logo-twitter"] {
+    color: #fff;
+  }
+
+  .Link ion-icon[name="logo-linkedin"] {
+    color: #0A66C2;
+  }
+
+  .Link ion-icon[name="logo-instagram"] {
+    color: #E4405F;
   }
 
   .contact-info {
@@ -1562,22 +1728,25 @@ html, body {
 
   /* Footer */
   .Foot {
-    position: fixed;
-    width: 100%;
-    height: 4rem;
-    background-color: rgb(23, 24, 24);
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-  }
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
+}
 
-  footer {
-    font-weight: 500;
-    text-align: center;
-    color: #fff;
-  }
+footer {
+  font-weight: 500;
+  text-align: center;
+  color: #ecf0f1;
+  font-size: 0.9rem;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
 }
 
 
@@ -1636,8 +1805,8 @@ html, body {
   .content, .Corps {
     position: relative;
     z-index: 1;
-    margin-top: 6rem;
-    padding: 2rem 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
   }
 
   /* Hero */
@@ -1677,7 +1846,7 @@ html, body {
 
   h2 {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0.2rem;
     font-size: 1.25em;
   }
 
@@ -1738,7 +1907,7 @@ html, body {
     grid-template-columns: repeat(4, 1fr);
     gap: 2.5rem;
     margin-left: 3rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   .services div {
@@ -1867,19 +2036,53 @@ html, body {
 
   .Contacts.fixed {
     position: fixed;
-    left: 20px;
+    right: 10px;
     z-index: 1100;
-    top: 30rem;
+    top: 28rem;
     background: transparent;
-    animation: whatsappPulse 3s infinite;
+    animation: contactGlow 2s infinite;
   }
 
   .Ap {
     margin: 2rem auto;
-    padding: 1rem 2rem;
-    background-color: black;
+    padding: 2.5rem 3rem;
+    background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
     color: #fff;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(155, 89, 182, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    font-size: 1.1rem;
+  }
+
+  .Ap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(155, 89, 182, 0.2) 0%, rgba(142, 68, 173, 0.2) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .Ap:hover {
+    transform: translateY(-12px) scale(1.08);
+    box-shadow: 0 30px 60px rgba(155, 89, 182, 0.5);
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .Ap:hover::before {
+    opacity: 1;
+  }
+
+  .Ap > * {
+    position: relative;
+    z-index: 1;
   }
 
   .apropo {
@@ -1898,6 +2101,27 @@ html, body {
     font-size: 2rem;
   }
 
+  .Link a {
+    display: inline-block;
+    margin: 0.5rem;
+  }
+
+  .Link ion-icon[name="logo-facebook"] {
+    color: #1877F2;
+  }
+
+  .Link ion-icon[name="logo-twitter"] {
+    color: #fff;
+  }
+
+  .Link ion-icon[name="logo-linkedin"] {
+    color: #0A66C2;
+  }
+
+  .Link ion-icon[name="logo-instagram"] {
+    color: #E4405F;
+  }
+
   .contact-info {
     margin: 2rem auto;
     padding: 1rem 2rem;
@@ -1905,21 +2129,23 @@ html, body {
 
   /* Footer */
   .Foot {
-    position: fixed;
-    width: 100%;
-    height: 4.5rem;
-    background-color: rgb(23, 24, 24);
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-  }
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
+}
 
-  footer {
-    font-weight: 500;
-    text-align: center;
-    color: #fff;
-    font-size: 1rem;
-  }
+footer {
+  font-weight: 500;
+  text-align: center;
+  color: #ecf0f1;
+  font-size: 0.9rem;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
 }
