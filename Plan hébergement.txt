@@ -1,0 +1,294 @@
+Oui. Il existe plusieurs **hébergeurs gratuits officiels** que les développeurs utilisent pour publier leurs projets web sans payer. Voici les **meilleurs et les plus fiables** actuellement.
+
+---
+
+# 1. GitHub Pages
+
+**👉 [https://pages.github.com](https://pages.github.com)**
+
+✅ Avantages
+
+* Hébergement **100 % gratuit**
+* Domaine gratuit : `username.github.io`
+* SSL gratuit
+* Déploiement automatique depuis Git
+* Très fiable (infrastructure GitHub)
+
+⚠️ Limites
+
+* Seulement pour **sites statiques** (HTML, CSS, JS)
+* Pas de PHP ou base de données serveur
+* Taille environ **1 GB** par site ([Free RDP Connect - My WordPress Blog][1])
+
+💡 Idéal pour :
+
+* portfolio
+* site vitrine
+* documentation
+* landing page
+
+---
+
+# 2. Vercel
+
+**👉 [https://vercel.com](https://vercel.com)**
+
+✅ Avantages
+
+* Hébergement gratuit
+* Déploiement automatique via GitHub
+* SSL + CDN mondial
+* Compatible **React, Next.js, Vue**
+
+⚠️ Limites
+
+* Bande passante environ **100 GB/mois** sur le plan gratuit ([Free RDP Connect - My WordPress Blog][1])
+
+💡 Idéal pour :
+
+* applications React
+* sites modernes frontend
+
+---
+
+# 3. Netlify
+
+**👉 [https://www.netlify.com](https://www.netlify.com)**
+
+✅ Avantages
+
+* Très facile à utiliser
+* Déploiement en drag-and-drop
+* formulaires intégrés
+* fonctions serverless
+
+⚠️ Limites
+
+* **100 GB bande passante** gratuite
+* **300 minutes de build** par mois ([1VPS.com][2])
+
+💡 Idéal pour :
+
+* sites statiques
+* JAMstack
+
+---
+
+# 4. Cloudflare Pages
+
+**👉 [https://pages.cloudflare.com](https://pages.cloudflare.com)**
+
+✅ Avantages
+
+* bande passante **illimitée**
+* SSL + protection DDoS
+* réseau mondial très rapide
+* intégration GitHub
+
+⚠️ Limites
+
+* environ **500 builds/mois** sur le plan gratuit ([1VPS.com][2])
+
+💡 Idéal pour :
+
+* projets sérieux
+* sites rapides
+
+---
+
+# 5. InfinityFree
+
+**👉 [https://infinityfree.net](https://infinityfree.net)**
+
+✅ Avantages
+
+* **5 GB stockage**
+* bande passante illimitée
+* support PHP + MySQL
+* cPanel
+
+⚠️ Limites
+
+* 50 000 visites/jour maximum ([Tom's Guide][3])
+
+💡 Idéal pour :
+
+* petits sites WordPress
+* projets étudiants
+
+---
+
+# ⭐ Mon conseil (important)
+
+Si ton site est :
+
+### Site simple (HTML / CSS / JS)
+
+➡️ utilise **GitHub Pages + Vercel**
+
+### Application moderne (React / Next)
+
+➡️ **Vercel**
+
+### Site PHP / MySQL
+
+➡️ **InfinityFree**
+
+---
+
+✅ Solution très utilisée par les développeurs :
+
+Code → GitHub
+Déploiement automatique → Vercel
+
+Ton site sera en ligne gratuitement en 2 minutes.
+
+
+
+Puisque ton projet est déjà dans un repository sur GitHub, le déploiement sur Vercel est très rapide. Voici la procédure professionnelle utilisée par les développeurs.
+
+---
+
+# 1. Connecter Vercel à GitHub
+
+1. Va sur **[https://vercel.com](https://vercel.com)**
+2. Clique **Sign Up**
+3. Choisis **Continue with GitHub**
+4. Autorise Vercel à accéder à ton compte GitHub.
+
+👉 Cela permet à Vercel de voir tes repositories.
+
+---
+
+# 2. Importer ton projet
+
+1. Dans le dashboard Vercel
+2. Clique **Add New → Project**
+3. Vercel va afficher tes repositories GitHub.
+4. Sélectionne le repository de ton site.
+
+---
+
+# 3. Configuration du projet
+
+Dans la plupart des cas, **ne change rien**.
+
+Clique simplement :
+
+```
+Deploy
+```
+
+Vercel va automatiquement :
+
+* télécharger ton code depuis GitHub
+* construire le site
+* le publier sur internet
+
+⏱ Temps : **30 secondes à 2 minutes**
+
+---
+
+# 4. Ton site sera accessible
+
+Vercel va te donner une URL comme :
+
+```
+https://nom-du-projet.vercel.app
+```
+
+Ton site est déjà **en ligne avec HTTPS sécurisé**.
+
+---
+
+# 5. Déploiement automatique
+
+C'est l'avantage principal.
+
+Chaque fois que tu fais :
+
+```bash
+git push
+```
+
+sur GitHub
+
+→ Vercel redéploie automatiquement ton site.
+
+---
+
+# 6. Ajouter un domaine personnalisé (optionnel)
+
+Dans Vercel :
+
+```
+Project → Settings → Domains
+```
+
+Tu peux ajouter :
+
+```
+monsite.com
+```
+
+---
+
+# 7. Vérifier que ton projet fonctionne
+
+Ton repository doit contenir par exemple :
+
+```
+index.html
+style.css
+script.js
+```
+
+ou un projet :
+
+```
+React
+Next.js
+Vue
+```
+
+---
+
+# Problème courant
+
+Si Vercel ne trouve pas la page :
+
+Dans **Project Settings → Build & Output Settings**
+
+mettre :
+
+```
+Output Directory : .
+```
+
+ou
+
+```
+dist
+```
+
+(selon ton projet).
+
+---
+
+# Astuce professionnelle
+
+Pour un site simple HTML :
+
+structure recommandée :
+
+```
+/project
+ index.html
+ css/
+ js/
+ images/
+```
+
+
+
+

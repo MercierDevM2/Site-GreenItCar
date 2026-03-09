@@ -17,442 +17,356 @@ html, body {
   background-color: rgb(202, 245, 226);
 }
 
-/* Mobile First - Small Phones (360px - 480px) */
+/* ===== STYLES DE BASE (S'APPLIQUENT À TOUS LES ÉCRANS) ===== */
+
+h1, h2 {
+  text-align: center;
+  color: rgb(3, 66, 3);
+}
+
+p {
+  text-align: justify;
+  color: #555;
+  line-height: 1.6;
+}
+
+ol, ul {
+  color: rgb(3, 66, 3);
+  line-height: 1.6;
+}
+
+ol li, ul li {
+  margin-bottom: 0.5rem;
+}
+
+.Photo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+.Photo img {
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.Photo .member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Photo p {
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+  padding: 0;
+}
+
+.Foot {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(23, 24, 24);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+footer {
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+}
+
+/* ===== STYLES POUR LES PROJETS (S'APPLIQUENT À TOUS LES ÉCRANS) ===== */
+
+.realisation-container {
+  margin: 2rem 0;
+  padding-bottom: 5rem;
+}
+
+.projet-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projet-card h3 {
+  color: rgb(3, 66, 3);
+  margin-bottom: 1rem;
+}
+
+.projet-content {
+  margin-bottom: 2rem;
+}
+
+.projet-content p {
+  color: #555;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.projet-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projet-image {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover;
+}
+
+.projet-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== SMALL PHONES (360px - 480px) ===== */
 @media (max-width: 480px) {
   h1, h2 {
-    text-align: center;
-    margin-top: 2rem;
-    color: rgb(3, 66, 3);
+    margin-top: 1rem;
+    font-size: 1.5rem;
   }
 
   p {
-    text-align: justify;
-    margin: 1rem 2rem;
-    color: #555;
-    line-height: 1.6;
-  }
-
-  ol {
-    margin: 1rem 2rem;
-    color: rgb(3, 66, 3);
-    line-height: 1.6;
-  }
-
-  ul {
-    margin: 1rem 2rem;
-    color: rgb(3, 66, 3);
-    line-height: 1.6;
-  }
-
-  ol li {
-    margin-bottom: 0.5rem;
-  }
-
-  ul li {
-    margin-bottom: 0.5rem;
-  }
-
-  .Photo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin: 2rem auto;
-    padding: 1rem 2rem;
-  }
-
-  .Photo img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .Photo .member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .Photo p {
-    width: 150px;
-    text-align: center;
-    margin-top: 0.5rem;
-    font-weight: 600;
-    color: #333;
-    margin: 0.5rem auto;
-    padding: 0;
-  }
-
-  .Foot {
-    position: fixed;
-    width: 100%;
-    height: 4rem;
-    background-color: rgb(23, 24, 24);
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-  }
-
-  footer {
-    font-weight: 500;
-    text-align: center;
-    color: #fff;
-    font-size: 0.75rem;
-  }
-}
-
-/* Tablets (481px - 768px) */
-@media (min-width: 481px) and (max-width: 768px) {
-  h1, h2 {
-    text-align: center;
-    margin-top: 2rem;
-    color: #333;
-  }
-
-  p {
-    text-align: justify;
-    margin: 1rem 2rem;
-    color: #555;
-    line-height: 1.6;
-  }
-
-  ol {
-    margin: 1rem 2rem;
-    color: #555;
-    line-height: 1.6;
-  }
-
-  ul {
-    margin: 1rem 2rem;
-    color: #555;
-    line-height: 1.6;
-  }
-
-  ol li {
-    margin-bottom: 0.5rem;
-  }
-
-  ul li {
-    margin-bottom: 0.5rem;
-  }
-
-  .Photo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin: 2rem auto;
-    padding: 1rem 2rem;
-  }
-
-  .Photo img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .Photo .member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .Photo p {
-    width: 150px;
-    text-align: center;
-    margin-top: 0.5rem;
-    font-weight: 600;
-    color: #333;
-    margin: 0.5rem auto;
-    padding: 0;
-  }
-
-  .Foot {
-    position: fixed;
-    width: 100%;
-    height: 4rem;
-    background-color: rgb(23, 24, 24);
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-  }
-
-  footer {
-    font-weight: 500;
-    text-align: center;
-    color: #fff;
+    margin: 0.8rem 1rem;
     font-size: 0.9rem;
   }
-}
 
-/* Petits Laptops/Large Tablets (769px - 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  h1, h2 {
-    text-align: center;
-    margin-top: 2rem;
-    color: #333;
-  }
-
-  p {
-    text-align: justify;
-    margin: 1rem 2rem;
-    color: #555;
-    line-height: 1.6;
-  }
-
-  ol {
-    margin: 1rem 2rem;
-    color: #555;
-    line-height: 1.6;
-  }
-
-  ul {
-    margin: 1rem 2rem;
-    color: #555;
-    line-height: 1.6;
-  }
-
-  ol li {
-    margin-bottom: 0.5rem;
-  }
-
-  ul li {
-    margin-bottom: 0.5rem;
+  ol, ul {
+    margin: 0.8rem 1rem;
+    font-size: 0.9rem;
   }
 
   .Photo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin: 2rem auto;
-    padding: 1rem 2rem;
+    gap: 1.5rem;
+    padding: 0.8rem 1rem;
   }
 
   .Photo img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .Photo .member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 120px;
+    height: 120px;
   }
 
   .Photo p {
-    width: 150px;
-    text-align: center;
+    width: 120px;
     margin-top: 0.5rem;
-    font-weight: 600;
-    color: #333;
-    margin: 0.5rem auto;
-    padding: 0;
+    font-size: 0.8rem;
   }
 
   .Foot {
-    position: fixed;
-    width: 100%;
-    height: 4rem;
-    background-color: rgb(23, 24, 24);
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
+    height: 3.5rem;
   }
 
   footer {
-    font-weight: 500;
-    text-align: center;
-    color: #fff;
+    font-size: 0.75rem;
+  }
+
+  .projet-card {
+    padding: 1rem;
+    margin: 1rem 0.5rem;
+  }
+
+  .projet-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .projet-image {
+    max-width: 150px;
+    height: auto;
+  }
+
+  .projet-images {
+    gap: 0.8rem;
+  }
+}
+
+/* ===== TABLETS (481px - 768px) ===== */
+@media (min-width: 481px) and (max-width: 768px) {
+  h1, h2 {
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+  }
+
+  p {
+    margin: 1rem 1.5rem;
     font-size: 0.95rem;
   }
-}
 
-/* Laptops standard (1025px - 1440px) */
-@media (min-width: 1025px) and (max-width: 1440px) {
-  h1, h2 {
-    text-align: center;
-    margin-top: 2rem;
-    color: rgb(3, 66, 3);
-  }
-
-  p {
-    text-align: justify;
-    margin: 1rem 2rem;
-    color: #555;
-    line-height: 1.6;
-  }
-
-  ol {
-    margin: 1rem 2rem;
-    color: #555;
-    line-height: 1.6;
-  }
-
-  ul {
-    margin: 1rem 2rem;
-    color: #555;
-    line-height: 1.6;
-  }
-
-  ol li {
-    margin-bottom: 0.5rem;
-  }
-
-  ul li {
-    margin-bottom: 0.5rem;
+  ol, ul {
+    margin: 1rem 1.5rem;
+    font-size: 0.95rem;
   }
 
   .Photo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .Photo img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .Photo p {
+    width: 140px;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .Foot {
+    height: 3.5rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
+
+  .projet-card {
+    padding: 1.5rem;
+    margin: 1.5rem 1rem;
+    max-width: 100%;
+  }
+
+  .projet-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .projet-image {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .projet-images {
+    gap: 1rem;
+  }
+}
+
+/* ===== SMALL DESKTOPS (769px - 1024px) ===== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  h1, h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  p {
+    margin: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  ol, ul {
+    margin: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .Photo {
     gap: 2rem;
-    margin: 2rem auto;
     padding: 1rem 2rem;
   }
 
   .Photo img {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .Photo .member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .Photo p {
     width: 150px;
-    text-align: center;
     margin-top: 0.5rem;
-    font-weight: 600;
-    color: #333;
-    margin: 0.5rem auto;
-    padding: 0;
+    font-size: 0.9rem;
   }
 
   .Foot {
-    position: fixed;
-    width: 100%;
     height: 4rem;
-    background-color: rgb(23, 24, 24);
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
   }
 
   footer {
-    font-weight: 500;
-    text-align: center;
-    color: #fff;
-    font-size: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .projet-card {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1100px;
+  }
+
+  .projet-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .projet-image {
+    max-width: 220px;
+    height: auto;
+  }
+
+  .projet-images {
+    gap: 1.5rem;
   }
 }
 
-/* Grand écrans (1441px and up) */
-@media (min-width: 1441px) {
+/* ===== LARGE DESKTOPS (1025px+) ===== */
+@media (min-width: 1025px) {
   h1, h2 {
-    text-align: center;
     margin-top: 2rem;
-    color: #333;
+    font-size: 2.2rem;
   }
 
   p {
-    text-align: justify;
     margin: 1rem 2rem;
-    color: #555;
-    line-height: 1.6;
+    font-size: 1rem;
   }
 
-  ol {
+  ol, ul {
     margin: 1rem 2rem;
-    color: #555;
-    line-height: 1.6;
-  }
-
-  ul {
-    margin: 1rem 2rem;
-    color: #555;
-    line-height: 1.6;
-  }
-
-  ol li {
-    margin-bottom: 0.5rem;
-  }
-
-  ul li {
-    margin-bottom: 0.5rem;
+    font-size: 1rem;
   }
 
   .Photo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 2rem;
-    margin: 2rem auto;
     padding: 1rem 2rem;
   }
 
   .Photo img {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .Photo .member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .Photo p {
     width: 150px;
-    text-align: center;
     margin-top: 0.5rem;
-    font-weight: 600;
-    color: #333;
-    margin: 0.5rem auto;
-    padding: 0;
+    font-size: 0.9rem;
   }
 
   .Foot {
-    position: fixed;
-    width: 100%;
     height: 4rem;
-    background-color: rgb(23, 24, 24);
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
   }
 
   footer {
-    font-weight: 500;
-    text-align: center;
-    color: #fff;
     font-size: 1rem;
+  }
+
+  .projet-card {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+  }
+
+  .projet-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .projet-image {
+    max-width: 250px;
+    height: auto;
+  }
+
+  .projet-images {
+    gap: 1.5rem;
   }
 }
