@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.Mon.mandayeF",
+    "sha256_cert_fingerprints": ["85:EE:0D:42:7A:21:16:2D:49:0F:15:82:72:C3:34:27:BF:A8:40:3B:6A:49:95:5E:8C:F7:CA:CB:ED:B7:5E:74"]
+  }
+}]
