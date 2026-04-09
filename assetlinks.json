@@ -3,6 +3,6 @@
   "target": {
     "namespace": "android_app",
     "package_name": "com.Mon.mandayeF",
-    "sha256_cert_fingerprints": ["85:EE:0D:42:7A:21:16:2D:49:0F:15:82:72:C3:34:27:BF:A8:40:3B:6A:49:95:5E:8C:F7:CA:CB:ED:B7:5E:74"]
+    "sha256_cert_fingerprints": ["F2:8E:F4:55:2D:CD:5A:D0:A5:ED:2B:B6:5C:F7:9A:E7:6D:C1:A9:86:DD:39:66:41:04:DB:2E:15:55:D0:8B:A8"]
   }
 }]
