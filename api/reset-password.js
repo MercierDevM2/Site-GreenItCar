@@ -11,7 +11,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { email, newPassword, resetToken } = req.body;
+  const { email, newPassword } = req.body;
 
   // ✅ Vérifier les champs
   if (!email || !newPassword) {
@@ -19,23 +19,38 @@ export default async function handler(req, res) {
   }
 
   if (newPassword.length < 6) {
-    return res.status(400).json({ error: 'Mot de passe trop court' });
+    return res.status(400).json({ error: 'Mot de passe trop court (min 6 caractères)' });
   }
 
   try {
-    // ✅ Mettre à jour le mot de passe avec le service role
-    const { error } = await supabase.auth.admin.updateUserByEmail(email, {
-      password: newPassword
-    });
-
-    if (error) {
-      console.error('Supabase error:', error);
-      return res.status(400).json({ error: error.message });
+    // 🔥 Étape 1 : Récupérer l'utilisateur par email
+    const { data: userData, error: userError } = await supabase.auth.admin.listUsers();
+    
+    if (userError) {
+      console.error('Erreur listUsers:', userError);
+      return res.status(500).json({ error: 'Erreur lors de la recherche utilisateur' });
     }
 
-    return res.status(200).json({ success: true });
+    const user = userData.users.find(u => u.email === email);
+    
+    if (!user) {
+      return res.status(404).json({ error: 'Utilisateur non trouvé' });
+    }
+
+    // 🔥 Étape 2 : Mettre à jour le mot de passe
+    const { error: updateError } = await supabase.auth.admin.updateUserById(
+      user.id,
+      { password: newPassword }
+    );
+
+    if (updateError) {
+      console.error('Erreur updateUserById:', updateError);
+      return res.status(400).json({ error: updateError.message });
+    }
+
+    return res.status(200).json({ success: true, message: 'Mot de passe mis à jour' });
   } catch (err) {
-    console.error('Server error:', err);
-    return res.status(500).json({ error: 'Erreur serveur' });
+    console.error('Erreur serveur:', err);
+    return res.status(500).json({ error: 'Erreur interne du serveur' });
   }
 }
