@@ -3,7 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accueil</title>
+  <!-- Amélioration SEO -->
+  <title>GreenItCar | Expert digital en RCA & au Maroc – Services, Réalisations, Contact</title>
+  <meta name="description" content="GreenItCar est une entreprise de services informatiques et de maintenance informatique en RCA et au Maroc .">
+  <meta name="keywords" content="développement web, maintenance informatique, formation digital, RCA, Maroc, GreenItCar">
+  <meta name="author" content="GreenItCar">
+  <meta property="og:title" content="GreenItCar | Expert digital en RCA & Maroc">
+  <meta property="og:description" content="Développement web, maintenance informatique et formations digitales en Afrique.">
+  <meta property="og:image" content="https://greenitcar.vercel.app/photo/Logo.png">
+  <meta property="og:url" content="https://greenitcar.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
   <link rel="stylesheet" href="Lettre.css">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -17,6 +29,28 @@
   gtag('config', 'G-TJWWNG92XV');
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "GreenItCar",
+  "email": "greenitcar@gmail.com",
+  "telephone": "+212680775822",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Pk11 Begoua",
+    "addressLocality": "Bangui",
+    "addressCountry": "CF"
+  },
+  "url": "https://greenitcar.vercel.app/",
+  "sameAs": [
+    "https://web.facebook.com/GreenItRcaofficiel",
+    "https://x.com/Mpropro23",
+    "https://www.linkedin.com/in/mercier-ulrich-gonissere-banekoumon-a597522a2",
+    "https://www.instagram.com/greenitcar"
+  ]
+}
+</script>
 </head>
 <body>
   <!-- Header fixe -->
@@ -24,18 +58,20 @@
     <img class="Logo" src="photo/Logo.png" alt="Logo">
     <div class="Entete">
       <ul class="Liste1">
-        <li><a href="#acceuil">Accueil</a></li>
+        <li><a href="#accueil">Accueil</a></li>
         <li><a href="Services.html">Nos Services</a></li>
         <li><a href="Réalisation.html">Nos Réalisations</a></li>
         <li><a href="Contact.html">Contact</a></li>
         <li><a href="APropos.html">A Propos</a></li>
       </ul>
     </div>
-    <div class="menu-toggle"><ion-icon name="menu-outline"></ion-icon></div>
+    <div class="menu-toggle" aria-label="Menu principal" role="button" tabindex="0">
+      <ion-icon name="menu-outline"></ion-icon>
+    </div>
   </header>
 
   <!-- Hero avec diapo et points -->
-  <section class="hero" id="acceuil">
+  <section class="hero" id="accueil">
     <div class="Diapo"></div>
     <div class="hero-content">
       <h1>Bienvenue sur GreenItCar</h1>
@@ -67,19 +103,19 @@
         <div class="Formation">
           <a href="Services.html#Formation">
             <span class="titre image">Formations</span>
-            <img src="photo/form.jpg" alt="Formation">
+            <img src="photo/form.jpg" alt="Formation" loading="lazy">
           </a>
         </div>
         <div class="Developpement">
           <a href="Services.html#Developpement">
             <span class="titre image">Développement</span>
-            <img src="photo/Dev.jpg" alt="Développement">
+            <img src="photo/Dev.jpg" alt="Développement" loading="lazy">
           </a>
         </div>
         <div class="Maintenance">
           <a href="Services.html#Maintenance">
             <span class="titre image">Maintenance</span>
-            <img src="photo/Maint.jpg" alt="Maintenance">
+            <img src="photo/Maint.jpg" alt="Maintenance" loading="lazy">
           </a>
         </div>
       </section>
@@ -88,25 +124,25 @@
         <div class="Application">
           <a href="Réalisation.html#Application">
             <span class="titre image">Applications</span>
-            <img src="photo/app1.jpeg" alt="Application">
+            <img src="photo/app1.jpeg" alt="Application" loading="lazy">
           </a>
         </div>
         <div class="Plateforme">
           <a href="Réalisation.html#Plateforme">
             <span class="titre image">Plateformes</span>
-            <img src="photo/plateforme.png" alt="Plateforme">
+            <img src="photo/plateforme.png" alt="Plateforme" loading="lazy">
           </a>
         </div>
         <div class="PrestaImmob">
           <a href="Réalisation.html#PrestaImmob">
             <span class="titre image">Plateformes de Prestations Immobilières</span>
-            <img src="photo/PrestaImmob1.png" alt="Prestations Immobilières">
+            <img src="photo/PrestaImmob1.png" alt="Prestations Immobilières" loading="lazy">
           </a>
         </div>
         <div class="SiteWeb">
           <a href="Réalisation.html#SiteWeb">
             <span class="titre image">Sites Web</span>
-            <img src="photo/site.png" alt="Site Web">
+            <img src="photo/site.png" alt="Site Web" loading="lazy">
           </a>
         </div>
       </section>

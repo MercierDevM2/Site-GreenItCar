@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://greenitcar.vercel.app/sitemap.xml
