@@ -17,6 +17,7 @@ html, body {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
+
 /* ===== STYLES DE BASE (S'APPLIQUENT À TOUS LES ÉCRANS) ===== */
 
 h1 {
@@ -1594,4 +1595,181 @@ ol {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-right: 0.5rem;      /* espace entre le numéro et le texte */
+}
+/* ===== HEADER UNIFIÉ (basé sur votre design) ===== */
+
+.Contenus {
+  width: 100%;
+  height: 5rem;
+  background-color: rgb(236, 245, 234);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.Contenus .Logo {
+  width: 55px;
+  transition: transform 0.3s ease;
+}
+
+.Contenus .Logo:hover {
+  transform: scale(1.05);
+}
+
+.Entete {
+  flex: 1;
+}
+
+.Liste1 {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.Liste1 li {
+  list-style: none;
+  font-weight: 600;
+  color: rgb(12, 12, 12);
+}
+
+.Liste1 li a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.Liste1 li a:hover {
+  color: orange;
+}
+
+/* Menu toggle (mobile) */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: rgb(12, 12, 12);
+  transition: transform 0.3s ease;
+}
+
+.menu-toggle:hover {
+  transform: scale(1.1);
+  color: orange;
+}
+
+/* Compensation du header fixe pour TOUTES les pages */
+body {
+  padding-top: 5rem !important;
+}
+
+/* Ajustement pour les ancres (ex: #accueil) */
+.hero,
+.services,
+.Réalisations,
+.Ap,
+.contact-section,
+.schedule-section,
+.section-projects,
+.section-formation,
+.section-development,
+.section-maintenance {
+  scroll-margin-top: 5rem;
+}
+
+/* ===== RESPONSIVE MOBILE ===== */
+
+/* Tablets et mobiles (max 768px) */
+@media (max-width: 768px) {
+  .Contenus {
+    height: 5rem;
+    padding: 0 1rem;
+  }
+
+  .Contenus .Logo {
+    width: 50px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .Entete {
+    position: static;
+  }
+
+  .Liste1 {
+    display: none;
+    position: fixed;
+    top: 5rem;
+    right: 0;           /* ← IMPORTANT : collé à droite */
+    left: auto;         /* ← IMPORTANT : annule left */
+    width: 220px;
+    background-color: rgba(255, 255, 255, 0.95);
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    border-radius: 0 0 0 10px;
+  }
+
+  .Liste1.active {
+    display: flex;
+  }
+
+  .Liste1 li {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  body {
+    padding-top: 5rem !important;
+  }
+}
+
+/* Small phones (max 480px) */
+@media (max-width: 480px) {
+  .Contenus {
+    height: 4.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .Contenus .Logo {
+    width: 40px;
+  }
+
+  .Liste1 {
+    top: 4.5rem;
+    width: 180px;
+    right: 0;           /* ← IMPORTANT : collé à droite */
+    left: auto;         /* ← IMPORTANT : annule left */
+  }
+
+  body {
+    padding-top: 4.5rem !important;
+  }
+}
+
+/* Desktop (min 769px) */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .Liste1 {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    gap: 2rem;
+    width: auto;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
 }
