@@ -241,7 +241,10 @@ body > div {
   margin: 3rem 0;
   position: relative;
 }
-
+span {
+  color: #e74c3c;
+  font-weight: 600;
+}
 .section-development::before,
 .section-maintenance::before {
   content: '';
