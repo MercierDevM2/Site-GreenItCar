@@ -24,9 +24,9 @@ function eraseText() {
 }
 // Diaporama avec points
 const backgrounds = [
-  "url(photo/Phot1.jpg)",
-  "url(photo/Phot2.png)",
-  "url(photo/Phot3.png)"
+  "url(photo/Phot1.webp)",
+  "url(photo/Phot2.webp)",
+  "url(photo/Phot3.webp)"
 ];
 
 const diapo = document.querySelector(".Diapo");

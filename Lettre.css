@@ -16,7 +16,7 @@ html, body {
   position: relative;
 }
 .Diapo {
-  background-image: url("photo/Phot1.jpg");
+  background-image: url("photo/Phot1.webp");
 }
 @keyframes blink {
   to {
