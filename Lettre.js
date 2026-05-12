@@ -73,7 +73,11 @@ document.addEventListener('click', (e) => {
 });
 
 // Lancement au chargement
-window.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
   setTimeout(typeLetter, 500); // texte animé
+  backgrounds.forEach(src => {
+  const img = new Image();
+  img.src = src.replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
+});
   startSlideshow();           // diaporama avec points
 });

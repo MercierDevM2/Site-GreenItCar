@@ -15,7 +15,9 @@ html, body {
   overflow-x: hidden;
   position: relative;
 }
-
+.Diapo {
+  background-image: url("photo/Phot1.jpg");
+}
 @keyframes blink {
   to {
     visibility: hidden;
