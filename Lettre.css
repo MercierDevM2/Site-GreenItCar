@@ -14,6 +14,7 @@ html, body {
   width: 100%;
   overflow-x: hidden;
   position: relative;
+  background: #0f172a;
 }
 .Diapo {
   background-image: url("photo/Phot1.webp");
@@ -157,6 +158,8 @@ html, body {
     margin-top: 2rem;
     font-size: 1.2rem;
     padding: 0 0.5rem;
+    color: #f8fafc;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
   }
 
   p {
@@ -360,10 +363,15 @@ html, body {
   .Ap {
     margin: 2rem auto;
     padding: 1.5rem 1.5rem;
-    background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+    background:
+    linear-gradient(
+      135deg,
+      rgba(30,41,59,0.95),
+      rgba(15,23,42,0.95)
+    );
     color: #fff;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(155, 89, 182, 0.3);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
@@ -378,14 +386,19 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(155, 89, 182, 0.2) 0%, rgba(142, 68, 173, 0.2) 100%);
+    background:linear-gradient(
+    135deg,
+    rgba(80,245,80,0.08),
+    rgba(59,130,246,0.08)
+  );
     opacity: 0;
     transition: opacity 0.3s ease;
   }
 
   .Ap:hover {
     transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(155, 89, 182, 0.4);
+    box-shadow:
+  0 25px 50px rgba(0,0,0,0.45);
     border-color: rgba(255, 255, 255, 0.4);
   }
 
@@ -410,30 +423,25 @@ html, body {
     margin: 2rem auto;
   }
 
-  .Link {
-    margin: 2rem auto;
-    padding: 1rem 2rem;
-    font-size: 2rem;
-  }
 
-  .Link a {
+  .socials a {
     display: inline-block;
     margin: 0.5rem;
   }
 
-  .Link ion-icon[name="logo-facebook"] {
+  .socials   ion-icon[name="logo-facebook"] {
     color: #1877F2;
   }
 
-  .Link ion-icon[name="logo-twitter"] {
+  .socials ion-icon[name="logo-twitter"] {
     color: #fff;
   }
 
-  .Link ion-icon[name="logo-linkedin"] {
+  .socials ion-icon[name="logo-linkedin"] {
     color: #0A66C2;
   }
 
-  .Link ion-icon[name="logo-instagram"] {
+  .socials   ion-icon[name="logo-instagram"] {
     color: #E4405F;
   }
 
@@ -442,26 +450,38 @@ html, body {
     padding: 1rem 2rem;
   }
 
-  /* Footer */
-  .Foot {
+  .Foot{
   position: fixed;
   width: 100%;
   height: 4rem;
-  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   bottom: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(15,23,42,0.98),
+      rgba(30,41,59,0.98)
+    );
+
+  border-top: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 -5px 20px rgba(0,0,0,0.35);
+
+  backdrop-filter: blur(10px);
+
   z-index: 999;
-  box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
 }
 
-footer {
+footer{
+  color: #e2e8f0;
+  font-size: 0.95rem;
   font-weight: 500;
-  text-align: center;
-  color: #ecf0f1;
-  font-size: 0.9rem;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  letter-spacing: 0.3px;
 }
 
   /* Contact - small phones */
@@ -608,6 +628,8 @@ footer {
     margin-top: 3rem;
     font-size: 1.4rem;
     padding: 0 1rem;
+    color: #f8fafc;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
   }
 
   p {
@@ -811,10 +833,15 @@ footer {
   .Ap {
     margin: 2rem auto;
     padding: 1.8rem 1.8rem;
-    background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+    background:
+    linear-gradient(
+      135deg,
+      rgba(30,41,59,0.95),
+      rgba(15,23,42,0.95)
+    );
     color: #fff;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(155, 89, 182, 0.3);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
@@ -829,14 +856,19 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(155, 89, 182, 0.2) 0%, rgba(142, 68, 173, 0.2) 100%);
+    background:linear-gradient(
+    135deg,
+    rgba(80,245,80,0.08),
+    rgba(59,130,246,0.08)
+  );
     opacity: 0;
     transition: opacity 0.3s ease;
   }
 
   .Ap:hover {
     transform: translateY(-7px) scale(1.03);
-    box-shadow: 0 20px 40px rgba(155, 89, 182, 0.4);
+    box-shadow:
+  0 25px 50px rgba(0,0,0,0.45);
     border-color: rgba(255, 255, 255, 0.4);
   }
 
@@ -861,30 +893,25 @@ footer {
     margin: 2rem auto;
   }
 
-  .Link {
-    margin: 2rem auto;
-    padding: 1rem 2rem;
-    font-size: 2rem;
-  }
 
-  .Link a {
+  .socials a {
     display: inline-block;
     margin: 0.5rem;
   }
 
-  .Link ion-icon[name="logo-facebook"] {
+  .socials ion-icon[name="logo-facebook"] {
     color: #1877F2;
   }
 
-  .Link ion-icon[name="logo-twitter"] {
+  .socials ion-icon[name="logo-twitter"] {
     color: #fff;
   }
 
-  .Link ion-icon[name="logo-linkedin"] {
+  .socials ion-icon[name="logo-linkedin"] {
     color: #0A66C2;
   }
 
-  .Link ion-icon[name="logo-instagram"] {
+  .socials ion-icon[name="logo-instagram"] {
     color: #E4405F;
   }
 
@@ -894,25 +921,38 @@ footer {
   }
 
   /* Footer */
-  .Foot {
+  .Foot{
   position: fixed;
   width: 100%;
   height: 4rem;
-  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   bottom: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(15,23,42,0.98),
+      rgba(30,41,59,0.98)
+    );
+
+  border-top: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 -5px 20px rgba(0,0,0,0.35);
+
+  backdrop-filter: blur(10px);
+
   z-index: 999;
-  box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
 }
 
-footer {
+footer{
+  color: #e2e8f0;
+  font-size: 0.95rem;
   font-weight: 500;
-  text-align: center;
-  color: #ecf0f1;
-  font-size: 0.9rem;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  letter-spacing: 0.3px;
 }
 
   .Contact {
@@ -1034,12 +1074,15 @@ footer {
     font-size: 2.2em;
     text-align: center;
     margin-top: 5rem;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
   }
 
   h2 {
     text-align: center;
     margin-top: 3.5rem;
     font-size: 1.6rem;
+    color: #f8fafc;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
   }
 
   p {
@@ -1059,6 +1102,7 @@ footer {
     color: rgb(80, 245, 80);
     text-align: center;
     margin-top: 2rem;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
   }
 
   #cursor {
@@ -1239,10 +1283,15 @@ footer {
   .Ap {
     margin: 2rem auto;
     padding: 2rem 2rem;
-    background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+    background:
+    linear-gradient(
+      135deg,
+      rgba(30,41,59,0.95),
+      rgba(15,23,42,0.95)
+    );
     color: #fff;
     border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(155, 89, 182, 0.3);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -1257,14 +1306,19 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(155, 89, 182, 0.2) 0%, rgba(142, 68, 173, 0.2) 100%);
+    background:linear-gradient(
+    135deg,
+    rgba(80,245,80,0.08),
+    rgba(59,130,246,0.08)
+  );
     opacity: 0;
     transition: opacity 0.3s ease;
   }
 
   .Ap:hover {
     transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 25px 50px rgba(155, 89, 182, 0.4);
+    box-shadow:
+  0 25px 50px rgba(0,0,0,0.45);
     border-color: rgba(255, 255, 255, 0.4);
   }
 
@@ -1289,25 +1343,20 @@ footer {
     margin: 2rem auto;
   }
 
-  .Link {
-    margin: 2rem auto;
-    padding: 1rem 2rem;
-    font-size: 2rem;
-  }
-
-  .Link ion-icon[name="logo-facebook"] {
+  
+  .socials ion-icon[name="logo-facebook"] {
     color: #1877F2;
   }
 
-  .Link ion-icon[name="logo-twitter"] {
+  .socials ion-icon[name="logo-twitter"] {
     color: #fff;
   }
 
-  .Link ion-icon[name="logo-linkedin"] {
+  .socials ion-icon[name="logo-linkedin"] {
     color: #0A66C2;
   }
 
-  .Link ion-icon[name="logo-instagram"] {
+  .socials ion-icon[name="logo-instagram"] {
     color: #E4405F;
   }
 
@@ -1317,26 +1366,40 @@ footer {
   }
 
   /* Footer */
-  .Foot {
+  .Foot{
   position: fixed;
   width: 100%;
   height: 4rem;
-  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   bottom: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(15,23,42,0.98),
+      rgba(30,41,59,0.98)
+    );
+
+  border-top: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 -5px 20px rgba(0,0,0,0.35);
+
+  backdrop-filter: blur(10px);
+
   z-index: 999;
-  box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
 }
 
-footer {
+footer{
+  color: #e2e8f0;
+  font-size: 0.95rem;
   font-weight: 500;
-  text-align: center;
-  color: #ecf0f1;
-  font-size: 0.9rem;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  letter-spacing: 0.3px;
 }
+
   /* Contact - small laptops */
   .Contact {
     margin: 2rem auto;
@@ -1445,11 +1508,14 @@ footer {
     color: rgb(80, 245, 80);
     font-size: 2.5em;
     text-align: center;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
   }
 
   h2 {
     text-align: center;
     margin-top: 0.2rem;
+    color: #f8fafc;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
   }
 
   p {
@@ -1465,6 +1531,7 @@ footer {
     height: auto;
     font-size: 2em;
     color: rgb(80, 245, 80);
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
     text-align: center;
     margin-top: 2rem;
   }
@@ -1646,10 +1713,15 @@ footer {
   .Ap {
     margin: 2rem auto;
     padding: 2.2rem 2.2rem;
-    background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+    background:
+    linear-gradient(
+      135deg,
+      rgba(30,41,59,0.95),
+      rgba(15,23,42,0.95)
+    );
     color: #fff;
     border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(155, 89, 182, 0.3);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -1664,14 +1736,19 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(155, 89, 182, 0.2) 0%, rgba(142, 68, 173, 0.2) 100%);
+   background:linear-gradient(
+    135deg,
+    rgba(80,245,80,0.08),
+    rgba(59,130,246,0.08)
+  );
     opacity: 0;
     transition: opacity 0.3s ease;
   }
 
   .Ap:hover {
     transform: translateY(-12px) scale(1.08);
-    box-shadow: 0 30px 60px rgba(155, 89, 182, 0.5);
+    box-shadow:
+  0 25px 50px rgba(0,0,0,0.45);
     border-color: rgba(255, 255, 255, 0.4);
   }
 
@@ -1696,30 +1773,25 @@ footer {
     font-size: 1rem;
   }
 
-    .Link {
-    margin: 2rem auto;
-    padding: 1rem 2rem;
-    font-size: 2rem;
-  }
 
-  .Link a {
+  .socials a {
     display: inline-block;
     margin: 0.5rem;
   }
 
-  .Link ion-icon[name="logo-facebook"] {
+  .socials ion-icon[name="logo-facebook"] {
     color: #1877F2;
   }
 
-  .Link ion-icon[name="logo-twitter"] {
+  .socials ion-icon[name="logo-twitter"] {
     color: #fff;
   }
 
-  .Link ion-icon[name="logo-linkedin"] {
+  .socials ion-icon[name="logo-linkedin"] {
     color: #0A66C2;
   }
 
-  .Link ion-icon[name="logo-instagram"] {
+  .socials ion-icon[name="logo-instagram"] {
     color: #E4405F;
   }
 
@@ -1729,25 +1801,38 @@ footer {
   }
 
   /* Footer */
-  .Foot {
+ .Foot{
   position: fixed;
   width: 100%;
   height: 4rem;
-  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   bottom: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(15,23,42,0.98),
+      rgba(30,41,59,0.98)
+    );
+
+  border-top: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 -5px 20px rgba(0,0,0,0.35);
+
+  backdrop-filter: blur(10px);
+
   z-index: 999;
-  box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
 }
 
-footer {
+footer{
+  color: #e2e8f0;
+  font-size: 0.95rem;
   font-weight: 500;
-  text-align: center;
-  color: #ecf0f1;
-  font-size: 0.9rem;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  letter-spacing: 0.3px;
 }
 }
 
@@ -2048,10 +2133,16 @@ footer {
   .Ap {
     margin: 2rem auto;
     padding: 2.5rem 3rem;
-    background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+    background:
+    linear-gradient(
+      135deg,
+      rgba(30,41,59,0.95),
+      rgba(15,23,42,0.95)
+    );
+    backdrop-filter: blur(12px);
     color: #fff;
     border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(155, 89, 182, 0.3);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -2097,30 +2188,25 @@ footer {
     text-decoration: underline;
     margin: 2rem auto;
   }
-  .Link {
-    margin: 2rem auto;
-    padding: 1rem 2rem;
-    font-size: 2rem;
-  }
 
-  .Link a {
+  .socials a {
     display: inline-block;
     margin: 0.5rem;
   }
 
-  .Link ion-icon[name="logo-facebook"] {
+  .socials ion-icon[name="logo-facebook"] {
     color: #1877F2;
   }
 
-  .Link ion-icon[name="logo-twitter"] {
+  .socials ion-icon[name="logo-twitter"] {
     color: #fff;
   }
 
-  .Link ion-icon[name="logo-linkedin"] {
+  .socials ion-icon[name="logo-linkedin"] {
     color: #0A66C2;
   }
 
-  .Link ion-icon[name="logo-instagram"] {
+  .socials ion-icon[name="logo-instagram"] {
     color: #E4405F;
   }
 
@@ -2150,4 +2236,245 @@ footer {
   font-size: 0.9rem;
   text-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
+}
+
+/* IMPACT / RESULTATS */
+
+.Impact{
+  margin-top: 1rem;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.Impact::before{
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(80,245,80,0.12);
+  filter: blur(100px);
+  border-radius: 50%;
+  top: 0;
+  left: -100px;
+}
+
+.impact-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.impact-card{
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  height: 260px;
+
+  background: rgba(255,255,255,0.08);
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,0.25);
+
+  transition: 0.4s ease;
+}
+
+.impact-card:hover{
+  transform: translateY(-10px) scale(1.02);
+
+  box-shadow:
+  0 20px 50px rgba(0,0,0,0.4);
+}
+
+.impact-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: 0.5s ease;
+}
+
+.impact-card:hover img{
+  transform: scale(1.08);
+
+  filter: brightness(0.5);
+}
+
+.impact-overlay{
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 1.5rem;
+
+  background:
+  linear-gradient(
+    to top,
+    rgba(0,0,0,0.85),
+    rgba(0,0,0,0.2),
+    transparent
+  );
+
+  color: white;
+}
+
+.impact-overlay h3{
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+
+  color: rgb(80,245,80);
+}
+
+.impact-overlay p{
+  margin: 0;
+  font-size: 0.95rem;
+
+  color: #f1f1f1;
+}
+
+/* STATS */
+
+.Stats{
+  margin-top: 4rem;
+
+  display: grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(180px,1fr));
+
+  gap: 1.5rem;
+}
+
+.stat-box{
+  padding: 2rem 1rem;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  background:
+  linear-gradient(
+    135deg,
+    rgba(155,89,182,0.2),
+    rgba(80,245,80,0.12)
+  );
+
+  border:
+  1px solid rgba(255,255,255,0.15);
+
+  backdrop-filter: blur(12px);
+
+  transition: 0.4s ease;
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,0.2);
+}
+
+.stat-box:hover{
+  transform: translateY(-8px);
+
+  box-shadow:
+  0 20px 40px rgba(0,0,0,0.3);
+}
+
+.stat-box h3{
+  font-size: 2.2rem;
+
+  color: rgb(80,245,80);
+
+  margin-bottom: 0.5rem;
+}
+
+.stat-box span{
+  color: #f8fafc;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+
+  font-size: 1rem;
+
+  font-weight: 500;
+}
+
+.ap-grid{
+  display: grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(250px,1fr));
+
+  gap: 2rem;
+
+  margin-top: 2rem;
+}
+
+.ap-box{
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 1rem;
+}
+
+.ap-box h3{
+  color: rgb(80,245,80);
+
+  font-size: 1.3rem;
+
+  margin-bottom: 1rem;
+}
+
+.ap-box a{
+  color: #f8fafc;
+
+  transition: 0.3s ease;
+}
+
+.ap-box a:hover{
+  color: rgb(80,245,80);
+
+  transform: translateX(5px);
+}
+
+.socials{
+  display: flex;
+
+  gap: 1rem;
+
+  font-size: 2rem;
+}
+
+.contact-btn{
+  margin-top: 1rem;
+
+  width: fit-content;
+
+  padding: 0.8rem 1.5rem;
+
+  border-radius: 12px;
+
+  background:
+  linear-gradient(
+    135deg,
+    rgb(80,245,80),
+    #10b981
+  );
+
+  color: #0f172a !important;
+
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover{
+  transform: translateY(-3px);
+
+  box-shadow:
+  0 10px 25px rgba(80,245,80,0.35);
 }
