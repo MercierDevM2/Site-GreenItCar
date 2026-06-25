@@ -1,3 +1,9 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/final_services", "destination": "/final_services.html" },
+    { "source": "/final_realisation", "destination": "/final_realisation.html" },
+    { "source": "/final_contact", "destination": "/final_contact.html" },
+    { "source": "/final_apropos", "destination": "/final_apropos.html" }
+  ]
 }
