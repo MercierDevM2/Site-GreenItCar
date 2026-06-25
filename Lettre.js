@@ -1,5 +1,5 @@
 // Texte animé
-const text = "Solutions numériques innovantes pour l’Afrique.";
+const text = "La solution numérique innovante pour l’Afrique.";
 const typedText = document.getElementById("typed-text");
 let index = 0;
 
