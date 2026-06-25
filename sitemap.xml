@@ -6,19 +6,19 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://greenitcar.vercel.app/Services.html</loc>
+    <loc>https://greenitcar.vercel.app/final_services.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://greenitcar.vercel.app/Réalisation.html</loc>
+    <loc>https://greenitcar.vercel.app/final_realisation.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://greenitcar.vercel.app/Contact.html</loc>
+    <loc>https://greenitcar.vercel.app/final_contact.html</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://greenitcar.vercel.app/APropos.html</loc>
+    <loc>https://greenitcar.vercel.app/final_apropos.html</loc>
     <priority>0.7</priority>
   </url>
 </urlset>

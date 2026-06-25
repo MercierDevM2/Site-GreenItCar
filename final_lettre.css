@@ -17,7 +17,7 @@ html, body {
   background: #0f172a;
 }
 .Diapo {
-  background-image: url("photo/Phot1.webp");
+  background-image: url("photo/fonds/Phot1.webp");
 }
 @keyframes blink {
   to {
